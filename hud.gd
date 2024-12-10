@@ -5,13 +5,13 @@ signal start_game
 func show_message(text):
 	$MessageLabel.text = text
 	$MessageLabel.show()
-	$MessageTimer.start()
+	$MessageTimer.start(3)
 
 
 func show_game_over():
-	show_message("Game Over")
+	show_message("You need\nan X-Ray")
 	await $MessageTimer.timeout
-	$MessageLabel.text = "Dodge the\nCreeps"
+	$MessageLabel.text = "ClassiKyle\n\nDodge the\nData Chaos"
 	$MessageLabel.show()
 	await get_tree().create_timer(1).timeout
 	$StartButton.show()

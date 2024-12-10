@@ -33,7 +33,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_2jm3i")
 theme_override_font_sizes/font_size = 60
-text = "ClassiKyle"
+text = "ClassiKyle
+
+Dodge the 
+Data Chaos"
 horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
