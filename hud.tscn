@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccqoreueuxdb7"]
+[gd_scene load_steps=6 format=3 uid="uid://ccqoreueuxdb7"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://cit6gwe5px1q8" path="res://fonts/Xolonium-Regular.ttf" id="2_2jm3i"]
+[ext_resource type="Texture2D" uid="uid://cbj8kgiy5nbn" path="res://art/alistair.webp" id="3_wx5do"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_fopy7"]
 action = &"start_game"
@@ -58,6 +59,12 @@ text = "Start"
 
 [node name="MessageTimer" type="Timer" parent="."]
 one_shot = true
+
+[node name="Alistair" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(245, 171)
+scale = Vector2(0.27625, 0.27625)
+texture = ExtResource("3_wx5do")
 
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]

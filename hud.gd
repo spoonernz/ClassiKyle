@@ -10,8 +10,11 @@ func show_message(text):
 
 func show_game_over():
 	show_message("You need\nan X-Ray")
+	var sprite = $Alistair
+	sprite.visible = true
 	await $MessageTimer.timeout
 	$MessageLabel.text = "ClassiKyle\n\nDodge the\nData Chaos"
+	sprite.visible = false
 	$MessageLabel.show()
 	await get_tree().create_timer(1).timeout
 	$StartButton.show()

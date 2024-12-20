@@ -30,6 +30,10 @@ window/size/window_width_override=480
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 
+[editor]
+
+movie_writer/movie_file="C:/dev/ClassiKyle/demo.avi"
+
 [input]
 
 move_left={
@@ -75,3 +79,4 @@ start_game={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true
